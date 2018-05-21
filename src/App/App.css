@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid #f8f8f8;
+    height: 800px;
+}
+
+.main__static {
+    border-right: 1px solid #f8f8f8;
+}
+
+.main_fluid {
+    border-left: 1px solid #f8f8f8;
+}
+
+.app__container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #f8f8f8;
+}

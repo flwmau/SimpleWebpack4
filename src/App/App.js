@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Progress } from 'reactstrap';
+import { BrowserRouter } from 'react-router-dom';
+
+import './App.css';
+
+import Header from '../Header/Header';
+import Layouts from '../Examples/Layouts';
 
 export default class App extends React.Component {
    constructor(props) {
@@ -8,29 +13,20 @@ export default class App extends React.Component {
    }
 
    render() {
-      return <div> React Worked
-         <div>
-            <div className="text-center">0%</div>
-            <Progress />
-            <div className="text-center">25%</div>
-            <Progress value="25" />
-            <div className="text-center">50%</div>
-            <Progress value={50} />
-            <div className="text-center">75%</div>
-            <Progress value={75} />
-            <div className="text-center">100%</div>
-            <Progress value="100" />
-            <div className="text-center">Multiple bars</div>
-            <Progress multi>
-               <Progress bar value="15" />
-               <Progress bar color="success" value="30" />
-               <Progress bar color="info" value="25" />
-               <Progress bar color="warning" value="20" />
-               <Progress bar color="danger" value="5" />
-            </Progress>
-         </div>
-      </div>;
+     return (
+       <div className="app__container">
+         <Header/>
+       </div>
+     );
    }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Layouts/>, document.getElementById('app'));
+
+/*
+ReactDOM.render(
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>,
+  document.getElementById('app')
+);*/

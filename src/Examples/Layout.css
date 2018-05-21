@@ -1,0 +1,26 @@
+.layout {
+    margin: 0 auto;
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.layout__title {
+    width: 100%;
+    border-bottom: 4px solid #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    border: 4px solid #4cae4c;
+}
+
+.layout [class^=col] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
