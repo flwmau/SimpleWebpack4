@@ -1,0 +1,21 @@
+.todo__tools {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.todo__label-margin6 {
+    margin-right: 4px;
+}
+
+.todo__label-center {
+    text-align: center;
+}
+
+.todo__divider {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.todo__list-marginTop {
+    margin-top: 10px;
+}

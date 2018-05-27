@@ -6,6 +6,7 @@ import './App.css';
 
 import Header from '../Header/Header';
 import Layouts from '../Examples/Layouts';
+import TodoJquery from '../todo-list-jquery/todo-jquery';
 
 export default class App extends React.Component {
    constructor(props) {
@@ -16,12 +17,13 @@ export default class App extends React.Component {
      return (
        <div className="app__container">
          <Header/>
+         <TodoJquery/>
        </div>
      );
    }
 }
 
-ReactDOM.render(<Layouts/>, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
 
 /*
 ReactDOM.render(

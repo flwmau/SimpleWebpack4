@@ -19,13 +19,13 @@ export default class Layouts extends React.Component {
             <div className="container">
               Статичный
               <div class="row">
-                <div class="col-sm">
+                <div class="col-sm-4">
                   Колонка1
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6">
                   Колонка2
                 </div>
-                <div class="col-sm">
+                <div class="col-md-2 col-sm-2">
                   Колонка3
                 </div>
               </div>
